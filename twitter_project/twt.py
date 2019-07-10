@@ -8,17 +8,18 @@ Created on Tue Jul  9 10:42:17 2019
 
 import twitter
 import socket
-
+import json
 TCP_IP = "localhost"
 TCP_PORT = 9876
 KEY_WORD = 'Trump'
 
 def twt_app(TCP_IP,TCP_PORT,keyword=KEY_WORD):
-
-    consumer_key='Ee3rFDQkGja4LlCQVV2NSb161'
-    consumer_secret='MoUycihwXsisMc1S6Ok7BdqroNJdcPadVOzyYKGkvTqdtl2rkf'
-    access_token='837607037404078080-Ndt0u3TGyrt1a0lqPzeRvPnqV0uMMb7'
-    access_token_secret='s7Nv9lMe0Tk1SaTtLGb97p8kA82xEUGif04S3EK2u4JWY'
+    with open('./OAuth.json','r') as f:
+        oauth=json.load(f)
+    consumer_key=oauth['consumer_key']
+    consumer_secret=oauth['consumer_secret']
+    access_token=oauth['access_token']
+    access_token_secret=oauth['access_token_secret']
     
     api = twitter.Api(consumer_key=consumer_key,
                       consumer_secret=consumer_secret,
