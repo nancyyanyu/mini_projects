@@ -5,10 +5,10 @@
  
 - [Realtime Twitter Data Analysis using Spark Streaming
 ](https://github.com/nancyyanyu/mini_projects/tree/master/twitter_project):  [blog](https://nancyyanyu.github.io/posts/9fb5a802/)
-  - Tools: Python(socket, python-twitter, pyspark), Spark, matplotlib, seaborn
+  - Tools: Python(socket, python-twitter, pyspark), Apache Spark, matplotlib, seaborn
 
 - [Data Analysis of K-POP: Playing with Spotify API](https://github.com/nancyyanyu/mini_projects/tree/master/spotify_project):  [blog](https://nancyyanyu.github.io/posts/63adf3bb/)
-  - Tools: Python(spotipy, boto3), AWS DynamoDB, AWS S3, matplotlib, seaborn
+  - Tools: Python(spotipy, boto3), Apache Airflow, AWS DynamoDB, AWS S3, matplotlib, seaborn
 
 
 
